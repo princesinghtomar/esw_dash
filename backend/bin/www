@@ -24,7 +24,7 @@ const server = http.createServer(app);
 /**
  * Connect to MongoDB
  */
-mongoose.connect('mongodb://localhost:27017/react-auth',
+mongoose.connect('mongodb+srv://ESW_123:ESW_123@cluster0.doufk.mongodb.net/react-auth?retryWrites=true&w=majority',
 	{
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
