@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Redirect } from "react-router-dom"; 
+import { withRouter} from "react-router-dom"; 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,6 +8,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Cookies from 'universal-cookie';
 import Axios from "axios";
+import '../index.scss';
 
 const cookies = new Cookies();
 

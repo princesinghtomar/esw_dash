@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from "react-bootstrap/Container";
+import '../index.scss';
 
 const NotFoundPage = () => {
     return (<>
