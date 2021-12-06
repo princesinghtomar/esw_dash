@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Cookies from 'universal-cookie';
 import Axios from "axios";
-import '../index.scss';
+// import '../index.scss';
 
 const cookies = new Cookies();
 

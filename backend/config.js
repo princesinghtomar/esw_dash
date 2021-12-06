@@ -1,5 +1,5 @@
 let config = {
-    JWT_SECRET: "bismillahirrahmanirrahim"
+    JWT_SECRET: "princesinghtomaristhekey"
 };
 
 module.exports = config;

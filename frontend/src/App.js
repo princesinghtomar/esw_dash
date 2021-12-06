@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import NotFoundPage from './pages/NotFoundPage';
 import RegisterPage from './pages/RegisterPage';
+import About from './pages/About'
 
 class App extends Component {
     constructor(props) {
@@ -18,9 +19,10 @@ class App extends Component {
                 <Router>
                     <UserProvider>
                         <Switch>
-                            <Route exact path="/" render={() => <LoginPage/>}></Route>
-                            <Route exact path="/register" render={() => <RegisterPage/>}></Route>
-                            <Route exact path="/dashboard" render={() => <Dashboard/>}></Route>
+                            <Route exact path="/" render={() => <About />}></Route>
+                            <Route exact path="/Login" render={() => <LoginPage />}></Route>
+                            <Route exact path="/register" render={() => <RegisterPage />}></Route>
+                            <Route exact path="/dashboard" render={() => <Dashboard />}></Route>
                             <Route path="*" render={() => <NotFoundPage />}></Route>
                         </Switch>
                     </UserProvider>

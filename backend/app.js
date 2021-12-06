@@ -6,9 +6,7 @@ const express = require('express'),
     cors = require('cors');
 
 const indexRouter = require('./routes/index'),
-    usersRouter = require('./routes/users'),
-    todoRouter = require('./routes/todos');
-
+    usersRouter = require('./routes/users');
 const app = express();
 
 app.use(helmet());
@@ -20,6 +18,5 @@ app.use(cookieParser());
 
 app.use('/', indexRouter);
 app.use('/api/user', usersRouter);
-app.use('/api/todo', todoRouter);
 
 module.exports = app;
