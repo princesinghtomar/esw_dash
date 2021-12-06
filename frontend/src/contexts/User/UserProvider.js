@@ -12,7 +12,6 @@ class UserProvider extends Component {
         super(props);
         this.state = {
             isLoggedIn: false,
-
             name: null
         }
     }

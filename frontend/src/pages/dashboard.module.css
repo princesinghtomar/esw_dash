@@ -77,9 +77,33 @@
 }
 
 .table {
-    
+    width: 79%;
+    border-radius: 1px;
+    padding: 2px;
+    text-align: left;
+}
+
+.tr {
+    height: 100%;
+    /* padding: 1 rem; */
+}
+
+.td {
+    padding: 0.4rem;
+}
+
+.label {
+    font-size: 2rem;
+    color: royalblue;
+}
+
+.input {
+    font: inherit;
+    padding: 0.2em 0.3em;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .button_td {
-    align-content: center;
+    text-align: center;
 }

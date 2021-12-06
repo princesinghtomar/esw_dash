@@ -11,10 +11,11 @@ class About extends Component {
                 {context => (
                     <div>
                         <div id="navbar">
-                            <a class="active" href="/">Home</a>
-                            <a href="/#/Login">LogIn</a>
-                            <a href="/#/register">Register</a>
-                            <a href="https://github.com/VedanshM/esw_dashboard" target="_blank">Github</a>
+                            <a class="active">Home</a>
+                            {!context.name && <a href="/#/Login">LogIn</a>}
+                            {!context.name && <a href="/#/register">Register</a>}
+                            {context.name && <a href="javascript:window.location.reload(true)" onClick={() => context.handleLogout()}>Logout</a>}
+                            <a href="https://github.com/VedanshM/esw_dashboard" target="_blank" rel="noopener noreferrer">Github</a>
                             {context.name && <a href="/#/Dashboard">Dashboard</a>}
                             {/* {context.name && <p>Welcome, {context.name}</p>} */}
                         </div>
@@ -30,27 +31,27 @@ class About extends Component {
                                     <tr>
                                         <td>Pratyanshu Pandey</td>
                                         <td>2019101025</td>
-                                        <td><a href="https://github.com/pratyanshupandey" target="_blank">Github</a></td>
+                                        <td><a href="https://github.com/pratyanshupandey" target="_blank" rel="noopener noreferrer">Github</a></td>
                                     </tr>
                                     <tr>
                                         <td>Vedansh Mittal</td>
                                         <td>2019101054</td>
-                                        <td><a href="https://github.com/VedanshM" target="_blank">Github</a></td>
+                                        <td><a href="https://github.com/VedanshM" target="_blank" rel="noopener noreferrer">Github</a></td>
                                     </tr>
                                     <tr>
                                         <td>Utkarsh Upadhyay</td>
                                         <td>2019101010</td>
-                                        <td><a href="https://github.com/utkarsh-ls" target="_blank">Github</a></td>
+                                        <td><a href="https://github.com/utkarsh-ls" target="_blank" rel="noopener noreferrer">Github</a></td>
                                     </tr>
                                     <tr>
                                         <td>Prince Singh Tomar</td>
                                         <td>2019101021</td>
-                                        <td><a href="https://github.com/princesinghtomar" target="_blank">Github</a></td>
+                                        <td><a href="https://github.com/princesinghtomar" target="_blank" rel="noopener noreferrer">Github</a></td>
                                     </tr>
                                     <tr>
                                         <td>Bhaskar Joshi</td>
                                         <td>2019111002</td>
-                                        <td><a href="https://github.com/BhaskarJoshi-01" target="_blank">Github</a></td>
+                                        <td><a href="https://github.com/BhaskarJoshi-01" target="_blank" rel="noopener noreferrer">Github</a></td>
                                     </tr>
                                 </table>
                                 <br />
