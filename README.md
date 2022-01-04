@@ -1,4 +1,4 @@
-# MERN with JWT
+# MERN with JWT :-)
 
 A simple web stack using MongoDB, Express, React and Node. Using JWT for Authentication.
 
